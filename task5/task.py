@@ -51,7 +51,6 @@ def main(str_A, str_B):
     # Находим ядро противоречий
     S = find_S(A, B)
     S_json = json.dumps(S)
-    print(S_json)
     return S_json
 
 if __name__ == "__main__":
@@ -75,4 +74,4 @@ if __name__ == "__main__":
     with open(args.file_B, "r") as file:
         str_B = file.read()
 
-    main(str_A, str_B)
+    print(main(str_A, str_B))

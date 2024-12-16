@@ -35,7 +35,7 @@ def main():
     HaB = H_AB - H_A #  условная энтропия события B связанного с событием A
     I_AB = H_B - HaB #  информация в событии A о событии B
 
-    print([round(value, 2) for value in [H_AB, H_A, H_B, HaB, I_AB]])
+    return [round(value, 2) for value in [H_AB, H_A, H_B, HaB, I_AB]]
 
 if __name__ == "__main__":
-    main()
+    print(main())

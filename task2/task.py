@@ -104,7 +104,7 @@ def main(json_string=None):
         tmp.append(len(find_indirect_descendants(tree[node], tree[node]))) # непрямые потомки
         tmp.append(len(bro_and_sis(tree[node]))) # братья и сестры
         matrix.append(tmp)
-    print(matrix)
+    return(matrix)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Обработка JSON-дерева")
@@ -119,4 +119,4 @@ if __name__ == "__main__":
     with open(args.file, "r") as file:
         json_string = file.read()
 
-    main(json_string)  
+    print(main(json_string)) 

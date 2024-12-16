@@ -115,7 +115,7 @@ def main(json_string=None):
             if x != 0:
                 H -= p*x*math.log2(p*x)
 
-    print(H)
+    return H
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Обработка JSON-дерева")
@@ -130,4 +130,4 @@ if __name__ == "__main__":
     with open(args.file, "r") as file:
         json_string = file.read()
 
-    main(json_string)  
+    print(main(json_string)) 

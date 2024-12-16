@@ -42,6 +42,7 @@ def main(json_string=None):
     print(to_matrix(tree))
     print("\nМассив родительских узлов:")
     print(to_array(tree))
+    return tree
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Обработка JSON-дерева")
