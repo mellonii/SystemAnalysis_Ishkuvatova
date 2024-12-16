@@ -122,7 +122,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "file",
         nargs="?",
-        default="/tree.json",
+        default="task3/tree.json",
         help="Путь к JSON-файлу (по умолчанию tree.json)",
     )
     args = parser.parse_args()
